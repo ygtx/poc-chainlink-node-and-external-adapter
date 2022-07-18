@@ -1,0 +1,33 @@
+version: '3'
+
+services:
+  pg_chainlink:
+    image: "postgres"
+    ports:
+      - "5434:5434"
+    env_file:
+      - database.env
+    volumes:
+      - "${PATH_TO_POSTGRESQL_DATA}:/var/lib/postgressql/data/"
+  
+  chainlink:
+    image: "smartcontract/chainlink:1.2.0"
+    env_file: .env
+    depends_on:
+      - pg_chainlink
+    ports:
+      - "6688:6688"
+    volumes:
+      - ./chainlink-volume/:/chainlink/
+    command: node start --password /chainlink/password.txt --api /chainlink/apicredentials.txt 
+  
+  adapter:
+    container_name: adapter
+    env_file: ../external-adapter/.env
+    ports:
+      - "8080:8080"
+    build:
+      context: ../external-adapter
+      dockerfile: ./Dockerfile
+    restart: on-failure
+    command: npm start

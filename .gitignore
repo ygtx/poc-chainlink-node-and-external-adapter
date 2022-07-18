@@ -1,0 +1,7 @@
+.env
+database.env
+.DS_Store
+run-node/chainlink-volume
+external-adapter/node_modules
+postgres-db
+jobs/GET_LargeData_fulfillOracleRequest2.toml
