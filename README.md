@@ -1,7 +1,7 @@
 <img width="1245" alt="image" src="https://user-images.githubusercontent.com/1631778/179432881-9a71d935-33ae-4aac-9df2-87e483ea8326.png">
 
 
-# external-adapters
+# external-adapter
 
 ```
 $ cp .env.sample .env
@@ -9,6 +9,11 @@ $ cp .env.sample .env
 * Fill with Moralis API infos. Used in main.js
 
 # run-node
+
+* This launches below 3
+  * Chainlink Node
+  * Chainlink Node DB
+  * External Adapter
 
 ```
 $ cp -r chainlink-volume.sample chainlink-volume
