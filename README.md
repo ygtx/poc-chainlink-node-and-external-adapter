@@ -49,7 +49,7 @@ $ docker-compose up
 * Login http://localhost:6688 and set adapter
   * https://zenn.dev/allegorywrite/articles/a8be18daa57980
 * JOB script is ./jobs
-
+* When Chainlink node launched, Chainlink Node Contract is automatically created.
 
 
 
