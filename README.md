@@ -1,4 +1,4 @@
-<img width="1245" alt="image" src="https://user-images.githubusercontent.com/1631778/179432881-9a71d935-33ae-4aac-9df2-87e483ea8326.png">
+<img width="1248" alt="image" src="https://user-images.githubusercontent.com/1631778/179434364-eb7591c6-6fd8-4fa0-ad2c-deee4a20eb40.png">
 
 
 # external-adapter
